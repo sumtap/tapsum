@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TapSum Support</title>
+<meta name="description" content="Support and help for the TapSum expense tracker app for iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #F6F8F7;
+    --surface: #FFFFFF;
+    --ink: #16201D;
+    --muted: #56655F;
+    --rule: #DCE3E0;
+    --accent: #0B7A63;
+    --accent-soft: #E3F1EC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0F1513;
+      --surface: #161E1B;
+      --ink: #E4EBE8;
+      --muted: #9AA9A3;
+      --rule: #27322E;
+      --accent: #52C7A8;
+      --accent-soft: #17302A;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0F1513;
+    --surface: #161E1B;
+    --ink: #E4EBE8;
+    --muted: #9AA9A3;
+    --rule: #27322E;
+    --accent: #52C7A8;
+    --accent-soft: #17302A;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.6 "Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding-inline: 20px;
+    padding-block: 48px 72px;
+  }
+  main { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+
+  header { display: flex; flex-direction: column; gap: 10px; }
+  .app {
+    font: 600 13px/1 "Source Sans 3", sans-serif;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  }
+  h1, h2 {
+    font-family: "Bricolage Grotesque", "Source Sans 3", -apple-system, sans-serif;
+    text-wrap: balance; margin: 0; letter-spacing: -0.01em;
+  }
+  h1 { font-size: clamp(32px, 7vw, 44px); line-height: 1.1; font-weight: 700; }
+  h2 { font-size: 22px; line-height: 1.25; font-weight: 600; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+
+  .summary {
+    background: var(--accent-soft);
+    border-radius: 12px;
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .summary h2 { font-size: 18px; }
+  .summary p { margin: 0; }
+  .summary .email { font-weight: 600; font-size: 19px; overflow-wrap: anywhere; }
+
+  section { display: flex; flex-direction: column; gap: 12px; padding-top: 28px; border-top: 1px solid var(--rule); }
+  p { margin: 0; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .faq { display: flex; flex-direction: column; gap: 20px; }
+  .faq .q { display: flex; flex-direction: column; gap: 6px; }
+  .faq .q h3 {
+    font-family: "Bricolage Grotesque", "Source Sans 3", sans-serif;
+    font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em;
+  }
+  .faq .q p { color: var(--ink); }
+
+  footer { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="app">TapSum · Expense tracker</span>
+    <h1>Support</h1>
+    <p class="meta">Help and contact for the TapSum iOS app</p>
+  </header>
+
+  <div class="summary">
+    <h2>Need help?</h2>
+    <p>Send an email and we'll get back to you, usually within a couple of days. Please include your iOS version and a short description of the problem.</p>
+    <p class="email"><a href="mailto:gsumtap@gmail.com">gsumtap@gmail.com</a></p>
+  </div>
+
+  <section>
+    <h2>About TapSum</h2>
+    <p>TapSum is a simple expense tracker for iPhone. You record expenses and income by hand, organize them into accounts and categories, and set monthly or yearly budgets. Everything stays on your device.</p>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <div class="q">
+        <h3>Where is my data stored?</h3>
+        <p>All of your data is kept locally on your iPhone. It is not sent to any server, and no one else can see it.</p>
+      </div>
+      <div class="q">
+        <h3>How do I back up or move my data to a new phone?</h3>
+        <p>Your TapSum data is included in your device backup. If you have iCloud Backup or a computer backup turned on and you restore your new iPhone from that backup, your data comes across with it.</p>
+      </div>
+      <div class="q">
+        <h3>How do I manage or cancel a subscription?</h3>
+        <p>Subscriptions are handled by Apple. Open the Settings app on your iPhone, tap your name at the top, then <strong>Subscriptions</strong>, and select TapSum to change or cancel it.</p>
+      </div>
+      <div class="q">
+        <h3>How do I restore a purchase on a new device?</h3>
+        <p>Sign in with the same Apple ID you used to buy it, open TapSum, and use <strong>Restore Purchases</strong> in the app's settings.</p>
+      </div>
+      <div class="q">
+        <h3>How do I delete all my data?</h3>
+        <p>Deleting the app from your iPhone removes all of its data. There is no copy anywhere else.</p>
+      </div>
+      <div class="q">
+        <h3>I found a bug or want to request a feature.</h3>
+        <p>Great, that helps a lot. Email <a href="mailto:gsumtap@gmail.com">gsumtap@gmail.com</a> with the details and we'll take a look.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>See how TapSum handles your data in the <a href="./privacy.html">Privacy Policy</a>.</p>
+  </section>
+
+  <footer>© 2026 Gleb Safronov. TapSum.</footer>
+</main>
+</body>
+</html>
